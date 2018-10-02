@@ -1315,7 +1315,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>meta.tag.jsx punctuation.definition.tag.end.jsx</string>
+					<string>punctuation.definition.tag.end.jsx</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -1348,12 +1348,12 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>meta.tag.jsx punctuation.definition.tag.begin.jsx</string>
+							<string>punctuation.definition.tag.begin.jsx</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>meta.tag.jsx entity.name.tag.jsx</string>
+							<string>entity.name.tag.html.jsx</string>
 						</dict>
 					</dict>
 					<key>end</key>
@@ -1363,22 +1363,22 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>meta.tag.jsx punctuation.definition.tag.begin.jsx</string>
+							<string>punctuation.definition.tag.begin.jsx</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>meta.tag.jsx entity.name.tag.jsx</string>
+							<string>entity.name.tag.html.jsx</string>
 						</dict>
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>meta.tag.jsx punctuation.definition.tag.end.jsx</string>
+							<string>punctuation.definition.tag.end.jsx</string>
 						</dict>
 						<key>4</key>
 						<dict>
 							<key>name</key>
-							<string>meta.tag.jsx punctuation.definition.tag.end.jsx</string>
+							<string>punctuation.definition.tag.end.jsx</string>
 						</dict>
 					</dict>
 					<key>patterns</key>
@@ -2372,7 +2372,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -2391,7 +2391,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -2405,7 +2405,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -2907,7 +2907,7 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 						<key>4</key>
 						<dict>
@@ -2940,7 +2940,7 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -2958,7 +2958,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -2980,7 +2980,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>variable.function.js</string>
+							<string>entity.name.function.js</string>
 						</dict>
 					</dict>
 					<key>match</key>
@@ -3414,7 +3414,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>string.interpolated.js keyword.other.template.begin.js</string>
+					<string>keyword.other.template.begin.js</string>
 				</dict>
 			</dict>
 			<key>captures</key>
@@ -3422,7 +3422,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>string.interpolated.js keyword.other.template.end.js</string>
+					<string>keyword.other.template.end.js</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -3788,7 +3788,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>meta.function-call.with-arguments.js variable.function.js</string>
+							<string>meta.function-call.with-arguments.js entity.name.function.js</string>
 						</dict>
 					</dict>
 					<key>end</key>

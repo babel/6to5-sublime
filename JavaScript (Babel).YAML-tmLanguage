@@ -706,18 +706,18 @@ repository:
     - name: meta.function-call.without-arguments.js
       match: ([_$a-zA-Z][$\w]*)\s*(\(\s*\))
       captures:
-        '1': {name: variable.function.js}
+        '1': {name: entity.name.function.js}
         '2': {name: meta.group.braces.round.function.arguments.js}
 
     - name: meta.function-call.with-arguments.js
       match: ([_$a-zA-Z][$\w]*)\s*(?=\()
       captures:
-        '1': {name: variable.function.js}
+        '1': {name: entity.name.function.js}
 
     - name: meta.function-call.tagged-template.js
       match: ([_$a-zA-Z][$\w]*)\s*(?=`)
       captures:
-        '1': {name: variable.function.js}
+        '1': {name: entity.name.function.js}
 
   literal-method-call:
     patterns:
@@ -731,7 +731,7 @@ repository:
       captures:
         '1': {name: variable.other.class.js}
         '2': {name: keyword.operator.accessor.js}
-        '3': {name: variable.function.js}
+        '3': {name: entity.name.function.js}
         '4': {name: meta.group.braces.round.function.arguments.js}
 
     - name: meta.function-call.static.with-arguments.js
@@ -744,7 +744,7 @@ repository:
       captures:
         '1': {name: variable.other.class.js}
         '2': {name: keyword.operator.accessor.js}
-        '3': {name: variable.function.js}
+        '3': {name: entity.name.function.js}
 
     - name: meta.function-call.method.without-arguments.js
       match: >-
@@ -753,7 +753,7 @@ repository:
           ([_$a-zA-Z][$\w]*)\s*
           (\(\s*\))
       captures:
-        '1': {name: variable.function.js}
+        '1': {name: entity.name.function.js}
         '2': {name: meta.group.braces.round.function.arguments.js}
 
     - name: meta.function-call.method.with-arguments.js
@@ -763,7 +763,7 @@ repository:
           ([_$a-zA-Z][$\w]*)\s*
           (?=\()
       captures:
-        '1': {name: variable.function.js}
+        '1': {name: entity.name.function.js}
 
   literal-language-variable:
     patterns:
@@ -1067,10 +1067,10 @@ repository:
   literal-template-string:
     begin: '`'
     beginCaptures:
-      '0': {name: string.interpolated.js keyword.other.template.begin.js}
+      '0': {name: keyword.other.template.begin.js}
     end: '`'
     captures:
-      '0': {name: string.interpolated.js keyword.other.template.end.js}
+      '0': {name: keyword.other.template.end.js}
     patterns:
     - include: '#string-content'
     - name: constant.character.escape.js
@@ -1129,7 +1129,7 @@ repository:
     - name: meta.styled-components.js
       begin: (?<!\.)\b(styled)\s*(?=(\((?>(?>[^()]+)|\g<-1>)*\))\s*`)
       captures:
-        '1': {name: meta.function-call.with-arguments.js variable.function.js}
+        '1': {name: meta.function-call.with-arguments.js entity.name.function.js}
       end: (?<=`)
       patterns:
       # Like #round-brackets, but with "meta.function-call.with-arguments.js" so
@@ -1267,14 +1267,14 @@ repository:
     patterns:
     - begin: (<)([_$a-zA-Z][-$:.\w]*[$\w]*)
       beginCaptures:
-        '1': {name: meta.tag.jsx punctuation.definition.tag.begin.jsx}
-        '2': {name: meta.tag.jsx entity.name.tag.jsx}
+        '1': {name: punctuation.definition.tag.begin.jsx}
+        '2': {name: entity.name.tag.html.jsx}
       end: (</)(\2)(>)|(/>)
       endCaptures:
-        '1': {name: meta.tag.jsx punctuation.definition.tag.begin.jsx}
-        '2': {name: meta.tag.jsx entity.name.tag.jsx}
-        '3': {name: meta.tag.jsx punctuation.definition.tag.end.jsx}
-        '4': {name: meta.tag.jsx punctuation.definition.tag.end.jsx}
+        '1': {name: punctuation.definition.tag.begin.jsx}
+        '2': {name: entity.name.tag.jsx}
+        '3': {name: punctuation.definition.tag.end.jsx}
+        '4': {name: punctuation.definition.tag.end.jsx}
       patterns:
       - include: '#jsx-tag-end'
       - include: '#jsx-attributes'
@@ -1285,7 +1285,7 @@ repository:
   jsx-tag-end:
     begin: '>'
     beginCaptures:
-      '0': {name: meta.tag.jsx punctuation.definition.tag.end.jsx}
+      '0': {name: punctuation.definition.tag.end.jsx}
     end: (?=</)
     patterns:
     - include: '#jsx-tag-start'
