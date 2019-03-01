@@ -3274,7 +3274,7 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>source.regexp.js</string>
+							<string>source.js.regexp</string>
 						</dict>
 					</array>
 				</dict>
