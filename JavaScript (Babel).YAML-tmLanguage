@@ -1049,7 +1049,7 @@ repository:
         '1': {name: punctuation.definition.string.end.js}
         '2': {name: keyword.other.js}
       patterns:
-      - include: source.regexp.js
+      - include: source.js.regexp
 
   literal-string:
     patterns:
